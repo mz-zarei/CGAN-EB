@@ -1,10 +1,10 @@
-# CGAN-EB: A Non-parametric Empirical Bayes Method for Crash Hotspot Identification Using Conditional Generative Adversarial Networks
+# Code for paper: CGAN-EB: A non-parametric empirical Bayes method for crash frequency modeling using conditional generative adversarial networks as safety performance functions
 link to paper with simulated crash data: https://arxiv.org/abs/2112.06925
-linkto paper with real-world crash data: https://arxiv.org/abs/2112.10588
+linkto paper with real-world crash data: https://www.sciencedirect.com/science/article/pii/S2046043022000594
 
+## Abstract
+The empirical Bayes (EB) method based on parametric statistical models such as the negative binomial (NB) has been widely used for ranking sites in the road network safety screening process. In this paper a novel non-parametric EB method for modeling crash frequency data based on Conditional Generative Adversarial Networks (CGAN) is proposed and evaluated over a real-world crash data set. Unlike parametric approaches, there is no need for a pre-specified underlying relationship between dependent and independent variables in the proposed CGAN-EB and they are able to model any types of distributions. The proposed methodology is applied to real-world and simulated crash data sets. The performance of CGAN-EB in terms of model fit, predictive performance and network screening outcomes is compared with the conventional approach (NB-EB) as a benchmark. The results indicate that the proposed CGAN-EB approach outperforms NB-EB in terms of prediction power and hotspot identification tests.
 
-A new non-parametric empirical Bayes approach called CGAN-EB is proposed for approximating empirical Bayes (EB) estimates in traffic locations (e.g., road segments) which benefits from the modeling advantages of deep neural networks, and its performance is compared in a simulation study with the traditional approach based on negative binomial model (NB-EB). The NB-EB uses negative binomial model in order to model the crash frequency data and is the most common approach in practice. To model the crash frequency data in the proposed CGAN-EB, conditional generative adversarial network is used, which is a powerful deep neural network based method that can model any types of distributions. 
-
-A number of simulation experiments are designed and conducted to evaluate the CGAN-EB performance in different conditions and compare it with the NB-EB. The results show that CGAN-EB performs as well as NB-EB when conditions favor the NB-EB model (i.e. data conform to the assumptions of the NB model) and outperforms NB-EB in experiments reflecting conditions frequently encountered in practice, specifically low sample means, and when crash frequency does not follow a log-linear relationship with covariates.
-
-The proposed methodology is also applied to a real-world data set collected for road segments from 2012 to 2017 in Washington State, USA. The performance of CGAN-EB in terms of model fit, predictive performance and network screening outcomes is compared with the conventional approach (NB-EB) as a benchmark. The results indicate that the proposed CGAN-EB approach outperforms NB-EB in terms of prediction power and hotspot identification tests.
+## Snapshots from the paper
+![CGAN architecture](cgan.png)
+![Result CGAN vs NB](results.png)
